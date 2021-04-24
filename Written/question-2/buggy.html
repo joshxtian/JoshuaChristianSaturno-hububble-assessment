@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    var orderedlistitems = document.querySelector('li');
+
+    // print the ordered list items, one at a time 
+    orderedlistitems.map(function(item){
+        console.log(item);
+    });
+
+  </script>
+
+  <style type="text/css">
+    h1 {
+      font-size: 36 !important;
+    }
+
+    .hidden-div {
+      display: none;
+    }
+
+    .section .div {
+      display: flex;
+    }
+    
+    /* add a blue underline under page heading */
+    .page-heading::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="page-heading">Cool Website Page Title</h1>
+  <h2>Cool List</h2>
+    <ul>
+      <div class="div">
+       Unordered List
+      </div>
+      <li>Unordered List item 1</li>
+      <li>Unordered List item 2</li>
+      <li>Unordered List item 3</li>
+      <li>Unordered List item 4</li>
+    </ul>
+
+    <ol>
+      <li>Ordered List item 1</li>
+      <li>Ordered List item 2</li>
+      <li>Ordered List item 3</li>
+      <li>Ordered List item 4</li>
+    </ol>
+    <section class="section">
+      <div class="hidden-div div">
+        This div is invisible.
+      </div>
+    </section>    
+</body>
+</html>
